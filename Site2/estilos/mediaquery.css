@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+
+
+@media screen and (min-width: 600px) {
+
+    div#topodesk {
+    display: block;
+    transform: translate(-32%, -45px);
+    }
+
+    span#topodesk1 {
+        color: #ca9d66;
+        transform: translateY(6px);
+        
+    }
+
+
+   
+    section {
+        display: flex;
+        max-width: 1200px;
+        height: 91vh;
+    }
+
+    section > div#topo {
+        display: none;
+        
+    }
+
+    section > div#imagem {
+        background-image: url(../imagens/hero-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 40%;
+        height: 100vh;
+                  
+    }
+
+    section > div#conteudo {
+        width: 60%;
+        
+    }
+   
+
+
+}
