@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -14,7 +15,7 @@
     <title>Site2</title>
 </head>
 <body>
-    <main>
+    
         <section>
             
             <div id="topo">
@@ -30,16 +31,29 @@
 
             </div>
 
-            <div id="conteudo">
-                <h1 id="um">WE'RE </h1> <h1 id="dois">COMING <br>SOON</h1>
-                <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-                <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
-                <input type="button" value="ENVIAR">
+            
+                <div id="conteudo">
 
-            </div>
+                    <div id="topodesk">
+                        <span class="material-symbols-outlined" id="topodesk1">
+                            radio_button_unchecked</span>
+                        <span id="topodesk2">BASE APPAREL</span>
+                    </div>
+                    
+                    <h1 id="um">WE'RE </h1> <h1 id="dois">COMING <br>SOON</h1>
+                    
+                    <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                
+                        <form action="#">
+                            <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
+                            <input type="button" value="ENVIAR">
+                        </form>
+                
+                </div>
+            
 
         </section>
-    </main>
+    
     
 </body>
 </html>
