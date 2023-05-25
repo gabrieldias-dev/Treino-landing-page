@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+section {
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    
+    
+}
+
+section > div#topo {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+section > div#topo > span#topo2 {
+    transform: translateY(6px);
+    color: #ca9d66;
+}
+
+section > div#topo > span#topo1 {
+    padding-left: 2px;
+    
+    
+}
+
+section > div#imagem {
+    background-image: url(../imagens/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* width: 100vw; */
+    height: 320px;
+}
+
+section > div#conteudo {
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    
+}
+
+h1#um {
+    color: #e2d3c1;
+}
+
+h1#dois {
+    margin-bottom: 30px;
+   
+}
+
+p {
+    color: #c5b8a7;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+    
+   
+}
+
+input[type=email] {
+    margin-left: 50px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 15px;
+    width: 370px;
+    border: 2px solid #e2d3c1;
+    
+}
+
+input[type=button] {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 15px;
+    border: 2px solid #e2d3c1;
+    transform: translateX(-35px);
+    background-image: linear-gradient(to right, #e2d9cf, #d5bb9b, #d4bfa5 );
+    
+  }
+
+  input[type=button]:hover {
+    background-image: linear-gradient(to right, #e4cfb7, #d4ae7f, #ca9d66 );
+    transition: 2s;
+  }
+
+::placeholder {
+    color: #c5b8a7;
+    padding-left: 8px;
+}
+
+
+
