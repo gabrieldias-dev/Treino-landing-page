@@ -1,145 +1,127 @@
+/* PROJETO CARD */
+
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
-
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
-::-webkit-scrollbar {
-    display: none;
+body {
+    background-color: #0d192b;
 }
 
+main {
+    /* width: 100vw;
+     height: 90vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #0d192b;
 
+}
 
 section {
-    max-width: 600px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 50px;
-    
-    
-}
-
-section > div#topo {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
-}
-
-section > div#topo > span#topo2 {
-    transform: translateY(6px);
-    color: #ca9d66;
-}
-
-section > div#topo > span#topo1 {
-    padding-left: 2px;
-    
-    
-}
-
-section > div#imagem {
     display: block;
-    background-image: url(../imagens/hero-mobile.jpg);
-    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 45px;
+    width: 300px;
+    height: 470px;
+    background-color: #14253d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.445);
+    overflow: hidden;
+    animation: flutuar 8s ease-in-out infinite;
+}
+
+ div#imagem {
+    display: block;
+    margin: auto;
+    background-image: url(../imagens/image-equilibrium.jpg);
     background-size: cover;
+    width: 253px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.378);
     
-    width: 100vw;
-    height: 320px;
 }
 
-section > div#conteudo {
+div#conteudo {
     display: block;
-    margin-top: 60px;
-    text-align: center;
-
-}
-
-div#topodesk{
-    display: none;
-}
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+    margin-left: 4px;
+    color: #ddeaf5;
     
 }
 
-h1#um {
-    color: #e2d3c1;
+div#conteudo > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    padding-bottom: 20px;
 }
 
-h1#dois {
-    margin-bottom: 30px;
-   
+div#conteudo > p {
+    font-size: 0.8em;
+    color: #c5ddf2ce;
+    padding-bottom: 20px;
 }
 
-p {
-    color: #c5b8a7;
+div#valor {
+    color: rgb(7, 231, 231);
+    padding-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    
+    
+}
+
+img {
+    transform: translateY(2px);
+
+}
+
+div#conteudo > div#valor > span#um {
+    color: #4977a4;
     padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 40px;
-    
+}
+
+div#rodape {
+    color: rgba(194, 220, 242, 0.49);
+}
+
+div#rodape > img {
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(9px);
+}
+
+
+
+div#rodape > a {
+    text-decoration: none;
+    color: #acc3d9;
+}
+
+div#rodape > a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #304665;
    
 }
-
-input[type=email] {
-    display: block;
-    margin: auto;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    border-radius: 15px;
-    width: 370px;
-    border: 2px solid #e2d3c1;
-    color: #e2d3c1;
-}
-
-
-
-input:focus-within {
-    border-color: #c0b2a1;
-    background-color: #fffdfa;
-    outline: 0;
-    color: #e2d3c1;
-     
-    
-}  
-
-
-
-input[type=button] {
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 80px;
-    padding-right: 80px;
-    border-radius: 15px;
-    border: 2px solid #e2d3c1;
-    background-image: linear-gradient(to right, #e2d9cf, #d5bb9b, #d4bfa5 );
-    color: #745f46;
-    
-    
-    
-  }
-
-  input[type=button]:hover {
-    background-image: linear-gradient(to right, #e4cfb7, #d4ae7f, #ca9d66 );
-    transform: scale(1.1);
-    transition: 0.5s;
-  }
-
-::placeholder {
-    color: #c5b8a7;
-    padding-left: 8px;
-}
-
-
 
