@@ -45,6 +45,7 @@ section > div#topo > span#topo1 {
 }
 
 section > div#imagem {
+    display: block;
     background-image: url(../imagens/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,9 +55,14 @@ section > div#imagem {
 }
 
 section > div#conteudo {
+    display: block;
     margin-top: 60px;
     text-align: center;
 
+}
+
+div#topodesk{
+    display: none;
 }
 
 h1 {
@@ -91,13 +97,26 @@ input[type=email] {
     border-radius: 15px;
     width: 370px;
     border: 2px solid #e2d3c1;
-    
+    color: #e2d3c1;
 }
+
+
+
+input:focus-within {
+    border-color: #c0b2a1;
+    background-color: #fffdfa;
+    outline: 0;
+    color: #e2d3c1;
+     
+    
+}  
+
+
 
 input[type=button] {
     display: block;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10px;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 80px;
@@ -113,7 +132,8 @@ input[type=button] {
 
   input[type=button]:hover {
     background-image: linear-gradient(to right, #e4cfb7, #d4ae7f, #ca9d66 );
-    transition: 2s;
+    transform: scale(1.1);
+    transition: 0.5s;
   }
 
 ::placeholder {
