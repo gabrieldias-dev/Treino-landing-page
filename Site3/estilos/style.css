@@ -1,0 +1,110 @@
+/* PROJETO CARD */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d192b;
+
+}
+
+section {
+    width: 300px;
+    height: 470px;
+    background-color: #14253d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.445);
+    overflow: hidden;
+}
+
+ div#imagem {
+    display: block;
+    margin: auto;
+    background-image: url(../imagens/image-equilibrium.jpg);
+    background-size: cover;
+    width: 253px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.378);
+    
+}
+
+div#conteudo {
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+    margin-left: 4px;
+    color: #ddeaf5;
+    
+}
+
+div#conteudo > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+div#conteudo > p {
+    font-size: 0.8em;
+    color: #c5ddf2ce;
+    padding-bottom: 20px;
+}
+
+div#valor {
+    color: rgb(7, 231, 231);
+    padding-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    
+    
+}
+
+img {
+    transform: translateY(2px);
+
+}
+
+div#conteudo > div#valor > span#um {
+    color: #4977a4;
+    padding-left: 50px;
+}
+
+div#rodape {
+    color: rgba(194, 220, 242, 0.49);
+}
+
+div#rodape > img {
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(9px);
+}
+
+
+
+div#rodape > a {
+    text-decoration: none;
+    color: #acc3d9;
+}
+
+div#rodape > a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #304665;
+   
+}
+
