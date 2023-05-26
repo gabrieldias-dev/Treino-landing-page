@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body {
+    background-color: #F3EAE3;
+}
+
+section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+
+    
+    
+
+}
+
+section > div#imagem {
+    width: 1250px;
+    height: 100%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+section > div#box {
+    background-color: aliceblue;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+section > div#box > p#perfu {
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+section > div#box > h1 {
+    font-size: 2.5em;
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(13, 69, 13);
+    
+}
+
+section > div#box > p#cont {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: rgb(13, 69, 13);
+}
+
+section > div#box > p#preco {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: rgb(13, 69, 13);
+}
+
+section > div#box > p#preco > i {
+    font-size: 0.5em;
+}
+
+section > div#box > input[type=button] {
+    display: block;
+    margin-left: 20px;
+    width: 85%;
+    margin-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.756);
+    background-color: rgb(69, 124, 90);
+    color: white;
+    
+    }
+    section > div#box > input[type=button]:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+
+    }
+
