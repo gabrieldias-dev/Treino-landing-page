@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 600px;
+    overflow: hidden;
+       
+}
+
+
+
+div#imagem {
+    display: block;
+    background-image: url(../imagens/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div#conteudo {
+    display: block;
+    margin-left: 15px;
+    color: #010c34;
+}
+
+div#conteudo > h1 {
+    color: #010c34;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div#conteudo > h2 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+div#conteudo > div#boxlista > p > img {
+    padding-right: 9px;
+    transform: translateY(6px);
+}
+
+div#conteudo > div#boxlista > p {
+    margin-bottom: 10px;
+
+}
+
+div#conteudo > div#email {
+   display: block;
+   padding-top: 15px;
+   padding-bottom: 8px;
+
+   
+}
+
+input {
+    display: block;
+}
+
+input[type="email"] {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    width: 350px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+
+}
+
+input[type=submit] {
+    width: 350px;
+    background-color: #04043b;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+ a {
+    text-decoration: none;
+}
+
+input[type=submit]:hover {
+    background-image: linear-gradient(to right, #bb0456, #ac034f, #e10000, #ff0000);
+    box-shadow: 1px 1px 10px #c90000;
+
+
+}
