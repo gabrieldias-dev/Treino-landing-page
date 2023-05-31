@@ -43,7 +43,7 @@ section {
     padding: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.445);
     overflow: hidden;
-    animation: flutuar 8s ease-in-out infinite;
+    animation: flutuar 7s ease-in-out infinite;
 }
 
  div#imagem {
