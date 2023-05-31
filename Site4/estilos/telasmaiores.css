@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@media screen and (min-width: 420px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: rgb(237, 246, 249);
+    }
+
+    main {
+        margin-top: 10px;
+       max-width: 1200px;
+       border: none;
+       display: flex;
+       
+       
+    }
+
+    div#imagem {
+        display: flex;
+        height: 545px;
+        background-image: url(../imagens/illustration-sign-up-desktop.svg);
+        background-size: cover;
+        background-position: top right;
+        border-radius: 0px 0px 10px 10px;
+    }
+    div#conteudo {
+        margin: auto;
+        margin-left: 10px;
+    }
+
+}
+
