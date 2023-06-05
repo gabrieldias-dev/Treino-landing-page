@@ -8,7 +8,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-12px);
     }
 }
 
@@ -43,7 +43,7 @@ section {
     padding: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.445);
     overflow: hidden;
-    animation: flutuar 7s ease-in-out infinite;
+    animation: flutuar 5.5s linear infinite;
 }
 
  div#imagem {
