@@ -15,11 +15,14 @@ body {
     flex-direction: column;
     min-height: 100vh ;
     background-color: rgb(156, 156, 156);
+    gap: 2em;
 }
 
 img {
     max-width: 100%;
     display: block;
+    opacity: 50%;
+    transition: all .6s ease-in-out;
 }
 
 .galeria {
@@ -29,11 +32,15 @@ img {
     justify-content: space-between;
     gap: .5em;
     background-color: white;
+    padding: .5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.408);
 }
 
 .galeria .imagem {
     flex-basis: calc(25% - .5em);
     position: relative;
+    overflow: hidden;
+    flex-grow: 1;
 }
 
 .galeria a {
@@ -51,4 +58,15 @@ img {
     text-decoration: none;
     position: absolute;
     bottom: 0;
+    transform: translateY(100%);
+    transition: all .4s ease-in-out;
+}
+
+.imagem:hover p {
+    transform: translateY(0);
+}
+
+img:hover {
+    opacity: 100%;
+    transform: scale(1.1);
 }
