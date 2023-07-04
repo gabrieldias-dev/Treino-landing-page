@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh ;
+    background-color: rgb(156, 156, 156);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.galeria {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5em;
+    background-color: white;
+}
+
+.galeria .imagem {
+    flex-basis: calc(25% - .5em);
+    position: relative;
+}
+
+.galeria a {
+    text-decoration: none;
+
+}
+
+.galeria p {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.501);
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: .75em;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
