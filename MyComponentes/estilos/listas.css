@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --cor-laranja: #ff7833 ;
+}
+
+body {
+    display: flex;
+
+}
+
+header img {
+    width: 100px;
+    margin-top: 5em;
+    margin-right: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3em;
+
+    width: 15%; 
+    min-height: 100vh;
+    background-color: #31333B;
+}
+
+header ul li {
+    
+    list-style-type: none;
+
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1em;
+    width: 100%;
+}
+
+header ul li{
+    border-bottom: 1px solid #f0f0f0;
+    width: 80%;
+    text-align: center;
+    padding: 8px 0 5px 0;
+
+}
+
+header a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: #60616483;
+    
+}
+
+main {
+    background-color: #444856;
+    width: 85%;
+    padding: 5em 8em 0 4em;
+    min-height: 100vh;
+    
+}
+
+.inicio {
+    border-left: 2px solid var(--cor-laranja);
+    padding-left: 2em;
+    margin-bottom: 3em;
+}
+
+
+
+ h1, h2, h3, h4{
+    color: var(--cor-laranja);
+    padding: 0 0 1em 0;
+      
+}
+
+h4 {
+    padding: 1.2em 0 1em 0;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    width: 52em;
+    
+}
+
+.listas {
+    width: 200px;
+   
+}
+
+.listas ul {
+    padding-left: 1.5em;
+}
+
+.listas ul li {
+    padding-top: .5em;
+}
+
+.ordenadas ul li {
+    list-style-type: decimal;
+
+}
+
+.alternantes li{
+    border-bottom: 1px solid white;
+    list-style-type: none;
+}
+
+.letras ul li {
+    list-style-type: upper-alpha;
+
+}
+
+.letras ul li ul li {
+    list-style-type: lower-alpha;
+
+}
+
+.letras ul li ul li ul li {
+    list-style-type: lower-roman;
+}
+
+.romano li { 
+    border: none;
+    list-style-type: upper-roman;
+}
+
+.lista-emoji li {
+    list-style-type: "\1F444"; 
+    /* Para colocar o emoji, é a barra contraria \ e o código decimal do emoji */
+}
+
