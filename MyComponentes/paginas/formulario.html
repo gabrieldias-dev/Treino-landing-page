@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+
+<link rel="stylesheet" href="../estilos/formulario.css">
+
 <body>
     <header>
         <img src="../imagens/perfil.png" alt="minha foto de perfil sorrindo">
@@ -21,11 +24,83 @@
     </header>
 
     <main>
+        
         <div class="inicio">
             <h1>My Component</h1>
-            <h2>Formularios</h2>
-            <p>As listas são muito importantes quando queremos listar alguns itens no site e também para a criação de menu de navegação.</p>
         </div>
+
+        <h2>Entre em contato</h2>
+        <section class="section-um">
+            <article class="form-nome">
+                <form action="#">
+                    <div class="nome-email">
+                        <div class="nome-email-individual">
+                            <label for="i-nome">Nome:</label>
+                            <input type="text" name="" id="i-nome">
+                        </div>
+
+                        <div class="nome-email-individual">
+                            <label for="i-email">Email:</label> <input type="email" name="" id="i-email">
+                        </div>
+                    </div>
+
+                    <div class="textos">
+                        <label for="mensagem">Digite sua mensagem:</label> 
+                        <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                        <input type="submit" value="Enviar">
+                        
+                    </div>
+                </form>
+            </article>
+            
+            <article class="endereco">
+
+                <address>
+                    <p>Endereço 1234 Avenida Otario quem leu, SP, São paulo 00000-000</p>
+                    <p>Telefone 00-0000-0000</p>
+                    <p>Email sujirokemimame@email.com</p>
+                </address>
+
+            </article>
+        </section>
+
+        <section class="section-dois">
+
+            <h2>Quiz</h2>
+
+            <form action="#">
+
+                <label for="i-linguas">
+                    <p>Qual sua linguaguem preferida?</p>
+                </label>
+                <select name="linguas" id="i-linguas">
+                    <option value="PT">Portugues</option>
+                    <option value="ES">Espanhol</option>
+                    <option value="IN">Inglês</option>
+                    <option value="CN">Mandarim</option>
+                    <option value="IT">Italiano</option>
+                    <option value="JA">Japones</option>
+                </select>
+
+                <div class="paragrafos">
+                    <p>Baixa prioridade<input type="radio" name="prio" id=""></p>
+                    <p>Media prioridade<input type="radio" name="prio" id=""></p>
+                    <p>Alta prioridade<input type="radio" name="prio" id=""></p>
+                
+
+                <p><input type="checkbox" name="" id=""> Envie-me uma cópia </p>
+                <p><input type="checkbox" name="" id=""> Sou humano </p>
+                </div>
+
+                <div>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </section>
     
 </body>
 </html>
