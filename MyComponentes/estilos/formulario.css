@@ -13,6 +13,8 @@
 
 body {
     display: flex;
+    background-image: url(../imagens/bg.png);
+    background-attachment: fixed;
 
 }
 
@@ -23,14 +25,25 @@ header img {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 3em;
-
     width: 15%; 
     min-height: 100vh;
-    background-color: #31333B;
+    background-color: rgb(49, 51, 59, .8);
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 2em;
+}
+
+
+
+nav {
+    width: 100%;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;   
+
 }
 
 header ul li {
@@ -70,7 +83,7 @@ header ul li:hover {
 }
 
 main {
-    background-color: #444856;
+    background-color: rgb(68, 72, 86, .6);
     width: 85%;
     padding: 5em 8em 0 4em;
     min-height: 100vh;
