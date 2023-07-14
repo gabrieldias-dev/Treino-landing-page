@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(transparent, red, blue),url(tile.png);
+
+    background-attachment:  scroll, fixed;
+    background-blend-mode: color; 
+    /* ele mescla as cores da imagem */
+}
+
+
+.cores {
+    width: 80%;
+    border: 5px dashed black;
+    margin: 20px auto;
+    padding: 1.5em;
+    
+}
+
+.cores {
+    counter-increment: contador;
+
+}
+
+.cores::before {
+    content: "[" counter(contador) "]"
+}
+
+.cores:nth-of-type(3) {
+    background-color: aqua;
+    background-clip: padding-box;
+}
+
+/* nth-of-type(numero que deseja), faz seleciona somente o número que deseja, no exemplo acima, selecionei a opção 3            */
+
+
